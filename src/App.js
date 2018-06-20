@@ -8,7 +8,7 @@ class App extends Component {
     this.state = {
       todos: [
         { description: 'Walk the cat', isCompleted: true },
-        { description: 'Throw the dishes away', is Completed: false },
+        { description: 'Throw the dishes away', isCompleted: false },
         { description: 'Buy new dishes', isCompleted: false }
       ]
     };
@@ -19,8 +19,8 @@ class App extends Component {
       <div className="App">
         <ul>
         { this.state.todos.map( (todo, index) =>
-        <ToDo key={ index } description={ todo.description } isCompleted={ todo.isCompleted } />
-      )}
+            <ToDo key={ index } description={ todo.description } isCompleted={ todo.isCompleted } />
+          )}
         </ul>
       </div>
     );
